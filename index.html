@@ -19,6 +19,7 @@
     <a href="#top" class="bar__logo"><span class="dot"></span>Руслан Керимов</a>
     <nav class="bar__nav">
       <a href="#projects">Проекты</a>
+      <a href="#experience">Опыт</a>
       <a href="#stack">Стек</a>
       <a href="#services">Чем помогу</a>
       <a href="#contact" class="bar__cta">Связаться</a>
@@ -31,18 +32,18 @@
         <p class="tag"><span class="pulse"></span>Открыт к работе и проектам</p>
         <h1>Руслан<br>Керимов</h1>
         <p class="hero__role">Full-stack разработчик · Laravel · Vue</p>
-        <p class="hero__lead">Делаю продукты целиком: от базы данных и очередей до интерфейса, оплаты и выкатки на сервер. Основатель и ведущий разработчик <a href="https://eloup.gg" target="_blank" rel="noopener">ELOUP.GG</a> — платформы тренировок для игроков CS2.</p>
+        <p class="hero__lead">В веб-разработке с 2020 года. Делаю продукты целиком: от базы данных и очередей до интерфейса, оплаты и выкатки на сервер. Основатель и ведущий разработчик <a href="https://eloup.gg" target="_blank" rel="noopener">ELOUP.GG</a> — платформы тренировок для игроков CS2.</p>
         <div class="hero__actions">
           <a href="#projects" class="btn btn--accent">Смотреть проекты</a>
           <a href="https://github.com/Lamakerr" class="btn btn--ghost" target="_blank" rel="noopener">GitHub</a>
           <a href="cv.pdf" class="btn btn--ghost" download>Резюме PDF</a>
         </div>
-        <p class="hero__meta mono">Тюмень · удалённо</p>
+        <p class="hero__meta mono">Тюмень · удалённо, гибрид или офис</p>
       </div>
       <div class="term" aria-hidden="true">
         <div class="term__bar"><i></i><i></i><i></i><span class="mono">ruslan@eloup: ~</span></div>
 <pre class="term__body mono"><span class="p">$</span> whoami
-<span class="o">Руслан Керимов — full-stack разработчик</span>
+<span class="o">Руслан Керимов — full-stack разработчик, в вебе с 2020</span>
 
 <span class="p">$</span> cat stack.txt
 <span class="k">backend </span>  PHP 8.3 · Laravel 13 · PostgreSQL · Redis
@@ -62,10 +63,10 @@
     </section>
 
     <section class="numbers">
-      <div><b>690</b><span>коммитов в ELOUP.GG, 488 — мои</span></div>
+      <div><b>6+ лет</b><span>в веб-разработке, с 2020 года</span></div>
+      <div><b>488</b><span>моих коммитов в ELOUP.GG из 690</span></div>
       <div><b>1 191</b><span>автотест на PHPUnit</span></div>
       <div><b>92</b><span>страницы на Vue + Inertia SSR</span></div>
-      <div><b>3</b><span>проекта в продакшене</span></div>
     </section>
 
     <section class="projects" id="projects">
@@ -77,7 +78,7 @@
           <div>
             <p class="project__role mono">Основатель · ведущий разработчик · 2026 — сейчас</p>
             <h3>ELOUP.GG</h3>
-            <p class="project__lead">Платформа тренировок и контента по CS2: раскидки гранат с видео, ИИ-разбор демок, тактическая доска в реальном времени, подписка с автоплатежами. Продукт с живой аудиторией и командой.</p>
+            <p class="project__lead">Платформа тренировок и контента по CS2: раскидки гранат с видео, ИИ-разбор демок, тактическая доска в реальном времени, подписка с автоплатежами. Спроектировал и запустил в продакшен — первые пять месяцев в одиночку, сейчас веду разработку с командой.</p>
           </div>
           <a href="https://eloup.gg" class="btn btn--accent" target="_blank" rel="noopener">eloup.gg ↗</a>
         </div>
@@ -105,7 +106,7 @@
               <li>PostgreSQL, Redis, очереди на Horizon, расписание задач.</li>
               <li>Ролевая админка с журналом действий и двухфакторным входом.</li>
               <li>1 191 автотест; Pint; CI/CD на GitHub Actions — push в main выкатывает прод.</li>
-              <li>Ubuntu, nginx, supervisor, бэкапы в S3, ежедневная сводка о состоянии системы.</li>
+              <li>Ubuntu, nginx, Let's Encrypt, supervisor, Docker Compose для локального окружения, бэкапы в S3, мониторинг доступности и ежедневная сводка о состоянии системы.</li>
               <li>Юридический контур: согласия, редакции документов, 152-ФЗ.</li>
             </ul>
             <div class="chips">
@@ -151,13 +152,66 @@
       </div>
     </section>
 
+    <section class="experience" id="experience">
+      <p class="eyebrow mono">// опыт</p>
+      <h2>Где работал</h2>
+      <ol class="timeline">
+        <li>
+          <span class="timeline__when mono">2026 — сейчас</span>
+          <div>
+            <h3>ELOUP.GG</h3>
+            <p class="timeline__role">Основатель · Fullstack Developer</p>
+            <p>Платформа для игроков CS2 — от идеи и CustDev до продакшена: архитектура на Laravel, разбор демок на Go, интерфейс на Vue 3, сервер и CI/CD. Подробнее — <a href="#projects">в проектах</a>.</p>
+          </div>
+        </li>
+        <li>
+          <span class="timeline__when mono">2023 — сейчас</span>
+          <div>
+            <h3>Фриланс и контрактная разработка</h3>
+            <p class="timeline__role">Fullstack Developer · частичная занятость</p>
+            <p>Админки, корпоративные сайты, лендинги и Telegram-боты для малого бизнеса под ключ; интеграции с платёжными шлюзами и CRM по API. Сопровождение и развитие LMS-платформы школы испанского LaLuna: обновление PHP и Laravel, работа с legacy-кодом. Совмещал с учёбой в университете.</p>
+          </div>
+        </li>
+        <li>
+          <span class="timeline__when mono">2022 — 2023</span>
+          <div>
+            <h3>Wikkeo.com</h3>
+            <p class="timeline__role">Junior Fullstack Developer · Laravel</p>
+            <p>Коммерческая разработка в продуктовой e-commerce команде: интерфейсы на Blade и jQuery, адаптивная вёрстка, интерактивные элементы. Архитектура MVC на крупном проекте и работа в команде.</p>
+          </div>
+        </li>
+        <li>
+          <span class="timeline__when mono">2020 — 2022</span>
+          <div>
+            <h3>Фриланс · самозанятый</h3>
+            <p class="timeline__role">Fullstack-разработчик</p>
+            <p>Веб-приложения, CRM и админ-панели для малого бизнеса. Спроектировал и разработал LMS-платформу школы испанского LaLuna — личные кабинеты студентов и преподавателей, онлайн-расписание, оплата и автоматические уведомления. Telegram-боты для продаж, базы данных на MySQL.</p>
+          </div>
+        </li>
+      </ol>
+      <div class="edu">
+        <div>
+          <h4>Образование</h4>
+          <p><b>Тюменский индустриальный университет</b>, 2026<br>Бакалавр · 09.03.01 «Информатика и вычислительная техника», автоматизированные системы обработки информации и управления</p>
+        </div>
+        <div>
+          <h4>Языки</h4>
+          <p>Русский — родной<br>Азербайджанский — C2<br>Турецкий — C1<br>Английский — B1</p>
+        </div>
+        <div>
+          <h4>Формат</h4>
+          <p>Полная или частичная занятость, проекты<br>Удалённо, гибрид или офис в Тюмени<br>Без переезда, готов к командировкам</p>
+        </div>
+      </div>
+    </section>
+
     <section class="stack" id="stack">
       <p class="eyebrow mono">// стек</p>
       <h2>С чем работаю</h2>
       <div class="stack__grid">
-        <div><h4>Backend</h4><p>PHP 8.3, Laravel 13, PostgreSQL, Redis, очереди и Horizon, Reverb (WebSocket), Go для сервисов, PHPUnit</p></div>
-        <div><h4>Frontend</h4><p>Vue 3, Inertia с SSR, Tailwind 4, Vite, canvas, адаптивная вёрстка</p></div>
-        <div><h4>Инфраструктура</h4><p>Ubuntu, nginx, php-fpm, supervisor, systemd, GitHub Actions, бэкапы в S3</p></div>
+        <div><h4>Backend</h4><p>PHP 8.3, Laravel 13, PostgreSQL, MySQL, Redis, очереди и Horizon, Reverb (WebSocket), Go, Python, PHPUnit</p></div>
+        <div><h4>Frontend</h4><p>Vue 3 (Composition API), Inertia с SSR, JavaScript и TypeScript, Pinia, Tailwind 4, Vite, canvas</p></div>
+        <div><h4>Инфраструктура</h4><p>Ubuntu, nginx, Docker и Docker Compose, php-fpm, supervisor, systemd, GitHub Actions, бэкапы в S3</p></div>
         <div><h4>Интеграции</h4><p>ЮKassa и автоплатежи, LLM-модели, Telegram и VK API, VK ID, Steam и FACEIT, Figma API</p></div>
         <div><h4>Админки</h4><p>Filament, свои ролевые админки с журналом действий и 2FA</p></div>
         <div><h4>SEO и аналитика</h4><p>SSR, sitemap, canonical, микроразметка, IndexNow, Яндекс.Метрика и Вебмастер</p></div>
@@ -181,8 +235,8 @@
       <p class="contact__lead">Расскажите о задаче или вакансии — отвечу в течение дня.</p>
       <div class="contact__links">
         <a href="https://t.me/rkertini" class="btn btn--accent" target="_blank" rel="noopener">Telegram @rkertini</a>
-        <a href="mailto:ruslan@eloup.gg" class="btn btn--ghost">ruslan@eloup.gg</a>
         <a href="mailto:lamalqpost@gmail.com" class="btn btn--ghost">lamalqpost@gmail.com</a>
+        <a href="mailto:ruslan@eloup.gg" class="btn btn--ghost">ruslan@eloup.gg</a>
         <a href="https://github.com/Lamakerr" class="btn btn--ghost" target="_blank" rel="noopener">GitHub</a>
       </div>
     </section>

@@ -96,6 +96,20 @@ li b { color: var(--text); font-weight: 600; }
 .shots--single { display: block; margin: 18px 0 20px; }
 .shots--single img { aspect-ratio: 16 / 10; }
 
+/* Опыт */
+.timeline { list-style: none; display: grid; border-left: 1px solid var(--line); margin-left: 6px; }
+.timeline > li { color: var(--text); display: grid; grid-template-columns: 150px 1fr; gap: 24px; padding: 0 0 36px 28px; }
+.timeline > li::before { left: -5px; top: .45em; width: 9px; height: 9px; border-radius: 50%; box-shadow: 0 0 0 4px var(--bg); }
+.timeline__when { font-size: 13px; color: var(--accent); padding-top: 4px; }
+.timeline h3 { font-size: 24px; margin-bottom: 4px; }
+.timeline__role { font: 500 13px var(--mono); color: var(--muted); margin-bottom: 10px; }
+.timeline p:not(.timeline__role) { color: rgba(238, 240, 234, .8); max-width: 52em; }
+.timeline a { color: var(--accent); }
+.edu { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 16px; margin-top: 16px; }
+.edu > div { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 24px; }
+.edu p { color: rgba(238, 240, 234, .8); font-size: 15px; }
+.edu b { color: var(--text); font-weight: 600; }
+
 /* Стек и услуги */
 .stack__grid, .services__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .stack__grid div, .services__grid div { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 24px; }
@@ -124,6 +138,7 @@ li b { color: var(--text); font-weight: 600; }
   .project__grid, .projects__row { grid-template-columns: 1fr; }
   .stack__grid { grid-template-columns: 1fr 1fr; }
   .services__grid { grid-template-columns: 1fr 1fr; }
+  .edu { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
   .bar__nav a:not(.bar__cta) { display: none; }
@@ -131,5 +146,6 @@ li b { color: var(--text); font-weight: 600; }
   .shots { grid-template-columns: 1fr; grid-template-rows: none; }
   .shots img:first-child { grid-row: auto; }
   .stack__grid, .services__grid { grid-template-columns: 1fr; }
+  .timeline > li { grid-template-columns: 1fr; gap: 6px; padding-left: 22px; }
   .term__body { font-size: 11.5px; padding: 18px; }
 }
