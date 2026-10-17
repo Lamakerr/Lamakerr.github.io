@@ -1,0 +1,4 @@
+# исходник фото не публикуем — на сайте photo.webp
+img/*.jpg
+!img/og.jpg
+!img/photo-cv.jpg

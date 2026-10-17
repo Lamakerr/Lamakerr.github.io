@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Руслан Керимов — full-stack разработчик</title>
+  <meta name="description" content="Руслан Керимов — full-stack разработчик на Laravel и Vue. Основатель и ведущий разработчик ELOUP.GG, сайты с админкой, подписки и оплаты, интеграции и боты.">
+  <meta property="og:title" content="Руслан Керимов — full-stack разработчик">
+  <meta property="og:description" content="Laravel · Vue · PostgreSQL. Основатель и ведущий разработчик ELOUP.GG.">
+  <meta property="og:image" content="https://lamakerr.github.io/img/og.jpg">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="bar">
+    <a href="#top" class="bar__logo"><span class="dot"></span>Руслан Керимов</a>
+    <nav class="bar__nav">
+      <a href="#projects">Проекты</a>
+      <a href="#stack">Стек</a>
+      <a href="#services">Чем помогу</a>
+      <a href="#contact" class="bar__cta">Связаться</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__text">
+        <p class="tag"><span class="pulse"></span>Открыт к работе и проектам</p>
+        <h1>Руслан<br>Керимов</h1>
+        <p class="hero__role">Full-stack разработчик · Laravel · Vue</p>
+        <p class="hero__lead">Делаю продукты целиком: от базы данных и очередей до интерфейса, оплаты и выкатки на сервер. Основатель и ведущий разработчик <a href="https://eloup.gg" target="_blank" rel="noopener">ELOUP.GG</a> — платформы тренировок для игроков CS2.</p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--accent">Смотреть проекты</a>
+          <a href="https://github.com/Lamakerr" class="btn btn--ghost" target="_blank" rel="noopener">GitHub</a>
+          <a href="cv.pdf" class="btn btn--ghost" download>Резюме PDF</a>
+        </div>
+        <p class="hero__meta mono">Екатеринбург · удалённо или гибрид</p>
+      </div>
+      <div class="hero__photo">
+        <!-- photo.webp — квадратный портрет -->
+        <img src="img/photo.webp" alt="Руслан Керимов" onerror="this.parentNode.classList.add('is-empty'); this.remove()">
+        <span class="hero__badge mono">since 2026 · ELOUP.GG</span>
+      </div>
+    </section>
+
+    <section class="numbers">
+      <div><b>690</b><span>коммитов в ELOUP.GG, 488 — мои</span></div>
+      <div><b>1 191</b><span>автотест на PHPUnit</span></div>
+      <div><b>92</b><span>страницы на Vue + Inertia SSR</span></div>
+      <div><b>3</b><span>проекта в продакшене</span></div>
+    </section>
+
+    <section class="projects" id="projects">
+      <p class="eyebrow mono">// проекты</p>
+      <h2>Что я сделал</h2>
+
+      <article class="project project--main">
+        <div class="project__head">
+          <div>
+            <p class="project__role mono">Основатель · ведущий разработчик · 2026 — сейчас</p>
+            <h3>ELOUP.GG</h3>
+            <p class="project__lead">Платформа тренировок и контента по CS2: раскидки гранат с видео, ИИ-разбор демок, тактическая доска в реальном времени, подписка с автоплатежами. Продукт с живой аудиторией и командой.</p>
+          </div>
+          <a href="https://eloup.gg" class="btn btn--accent" target="_blank" rel="noopener">eloup.gg ↗</a>
+        </div>
+        <div class="shots" data-gallery="eloup">
+          <img src="img/eloup-home.webp" alt="ELOUP.GG — главная" loading="lazy">
+          <img src="img/eloup-maps.webp" alt="ELOUP.GG — карты и раскидки" loading="lazy">
+          <img src="img/eloup-plus.webp" alt="ELOUP.GG — подписка PLUS" loading="lazy">
+        </div>
+        <div class="project__grid">
+          <div>
+            <h4>Что внутри</h4>
+            <ul>
+              <li><b>ИИ-разбор демок.</b> Сервис на Go разбирает запись матча, Laravel считает метрики и через очередь получает разбор от языковой модели; плюс ИИ-ассистент с памятью о прошлых разборах игрока.</li>
+              <li><b>Подписка ELOUP PLUS.</b> ЮKassa с автопродлением, возвратами, промокодами и сверкой платежей — единая точка записи исхода платежа.</li>
+              <li><b>Тактическая доска.</b> Совместное рисование в реальном времени на Reverb (WebSocket): presence-каналы, права на редактирование, реплей демки на canvas.</li>
+              <li><b>Раскидки.</b> Карта → точки → раскидки с видео; ffmpeg в очереди режет превью и обложки, избранное, квиз «Откуда кидать?».</li>
+              <li><b>Контент и сообщество.</b> Новости и гайды с модерацией, комментарии, лайки, публичные профили с опытом и уровнями, карточки матчей FACEIT (рендер через headless Chrome).</li>
+              <li><b>Интеграции.</b> Вход через VK ID, привязка Steam, FACEIT API, автопостинг в Telegram и VK, боты, управление TeamSpeak-сервером, IndexNow.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Как устроено</h4>
+            <ul>
+              <li>Laravel 13 + Inertia + Vue 3 с SSR, Tailwind 4, Vite.</li>
+              <li>PostgreSQL, Redis, очереди на Horizon, расписание задач.</li>
+              <li>Ролевая админка с журналом действий и двухфакторным входом.</li>
+              <li>1 191 автотест; Pint; CI/CD на GitHub Actions — push в main выкатывает прод.</li>
+              <li>Ubuntu, nginx, supervisor, бэкапы в S3, ежедневная сводка о состоянии системы.</li>
+              <li>Юридический контур: согласия, редакции документов, 152-ФЗ.</li>
+            </ul>
+            <div class="chips">
+              <span>Laravel</span><span>Vue 3</span><span>Inertia SSR</span><span>PostgreSQL</span><span>Redis</span><span>Reverb</span><span>Go</span><span>ЮKassa</span><span>LLM</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="projects__row">
+        <article class="project">
+          <p class="project__role mono">Заказ · 2026</p>
+          <h3>Студия праздников «Атмосфера»</h3>
+          <div class="shots shots--single">
+            <img src="img/atmosfera.webp" alt="Сайт студии «Атмосфера» — страница услуги" loading="lazy">
+          </div>
+          <p class="project__lead">Сайт студии декора в Екатеринбурге: лендинг с анимациями, CRM для заявок и админка на Filament, SSR. Через полгода провёл SEO-переработку.</p>
+          <ul>
+            <li>Отдельные страницы для 9 услуг с текстами, FAQ и микроразметкой.</li>
+            <li>Исправил sitemap, дубли сайта и canonical, перевёл прод в безопасный режим.</li>
+            <li>Картинки ужимаются в WebP при загрузке — страница стала в 9 раз легче.</li>
+            <li>Заявки помечаются услугой — в CRM видно, какая страница приводит клиентов.</li>
+          </ul>
+          <div class="chips"><span>Laravel</span><span>Filament</span><span>Vue</span><span>SSR</span><span>SEO</span></div>
+          <a href="https://ekb-atmosfera.ru" class="link mono" target="_blank" rel="noopener">ekb-atmosfera.ru ↗</a>
+        </article>
+
+        <article class="project">
+          <p class="project__role mono">Личный проект · 2026</p>
+          <h3>Портфолио дизайнера</h3>
+          <div class="shots shots--single">
+            <img src="img/farida.webp" alt="Портфолио дизайнера Фариды Керимовой" loading="lazy">
+          </div>
+          <p class="project__lead">Сайт-портфолио для дизайнера: работы выгружаются из Figma через API, 17 кейсов в четырёх разделах, PDF-версия собирается из тех же данных.</p>
+          <ul>
+            <li>Скрипты выгрузки фреймов из Figma и пережатия в WebP.</li>
+            <li>Сайт и PDF из одного источника — тексты не расходятся.</li>
+            <li>Статика на GitHub Pages, адаптив под телефон.</li>
+          </ul>
+          <div class="chips"><span>Figma API</span><span>Python</span><span>HTML/CSS</span><span>GitHub Pages</span></div>
+          <a href="https://lamakerr.github.io/farida-portfolio/" class="link mono" target="_blank" rel="noopener">farida-portfolio ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="stack" id="stack">
+      <p class="eyebrow mono">// стек</p>
+      <h2>С чем работаю</h2>
+      <div class="stack__grid">
+        <div><h4>Backend</h4><p>PHP 8.3, Laravel 13, PostgreSQL, Redis, очереди и Horizon, Reverb (WebSocket), Go для сервисов, PHPUnit</p></div>
+        <div><h4>Frontend</h4><p>Vue 3, Inertia с SSR, Tailwind 4, Vite, canvas, адаптивная вёрстка</p></div>
+        <div><h4>Инфраструктура</h4><p>Ubuntu, nginx, php-fpm, supervisor, systemd, GitHub Actions, бэкапы в S3</p></div>
+        <div><h4>Интеграции</h4><p>ЮKassa и автоплатежи, LLM-модели, Telegram и VK API, VK ID, Steam и FACEIT, Figma API</p></div>
+        <div><h4>Админки</h4><p>Filament, свои ролевые админки с журналом действий и 2FA</p></div>
+        <div><h4>SEO и аналитика</h4><p>SSR, sitemap, canonical, микроразметка, IndexNow, Яндекс.Метрика и Вебмастер</p></div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <p class="eyebrow mono">// для заказчиков</p>
+      <h2>Чем могу помочь</h2>
+      <div class="services__grid">
+        <div><span class="mono">01</span><h4>Сайт с админкой</h4><p>Лендинг или сайт компании, где вы сами меняете тексты, фото и услуги, а заявки собираются в CRM.</p></div>
+        <div><span class="mono">02</span><h4>Личный кабинет и оплата</h4><p>Регистрация, подписки, автоплатежи, промокоды и возвраты через ЮKassa.</p></div>
+        <div><span class="mono">03</span><h4>Интеграции и боты</h4><p>Telegram- и VK-боты, автопостинг, подключение внешних API и языковых моделей.</p></div>
+        <div><span class="mono">04</span><h4>Доработка и SEO</h4><p>Разберусь в существующем Laravel-проекте, починю, ускорю и приведу в порядок для поиска.</p></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="eyebrow mono">// контакты</p>
+      <h2>Давайте <span class="accent">поработаем</span></h2>
+      <p class="contact__lead">Расскажите о задаче или вакансии — отвечу в течение дня.</p>
+      <div class="contact__links">
+        <a href="https://t.me/rkertini" class="btn btn--accent" target="_blank" rel="noopener">Telegram @rkertini</a>
+        <a href="mailto:ruslan@eloup.gg" class="btn btn--ghost">ruslan@eloup.gg</a>
+        <a href="mailto:lamalqpost@gmail.com" class="btn btn--ghost">lamalqpost@gmail.com</a>
+        <a href="https://github.com/Lamakerr" class="btn btn--ghost" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mono">
+    <span>© 2026 Руслан Керимов</span>
+    <a href="cv.pdf" download>Резюме в PDF</a>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden><img alt=""></div>
+  <script>
+    // Скриншоты открываются крупно по клику
+    const box = document.getElementById('lightbox');
+    document.querySelectorAll('.shots img').forEach((img) => img.addEventListener('click', () => {
+      box.querySelector('img').src = img.src;
+      box.hidden = false;
+    }));
+    box.addEventListener('click', () => (box.hidden = true));
+    document.addEventListener('keydown', (e) => e.key === 'Escape' && (box.hidden = true));
+  </script>
+</body>
+</html>

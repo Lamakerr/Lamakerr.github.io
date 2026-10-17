@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Руслан Керимов — резюме</title>
+  <!-- Исходник cv.pdf: python tools/build-pdf.py <chrome-headless-shell.exe> -->
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap&subset=cyrillic" rel="stylesheet">
+  <style>
+    @page { size: A4; margin: 8mm 14mm; }
+    :root { --ink: #121412; --muted: #5d625b; --line: #e3e6df; --accent: #6f8f00; --chip: #f1f8d9; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font: 400 9.3pt/1.45 'Figtree', sans-serif; color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    header { display: grid; grid-template-columns: 30mm 1fr; gap: 7mm; align-items: center; padding-bottom: 5mm; border-bottom: 2px solid var(--ink); }
+    header img { width: 30mm; height: 30mm; object-fit: cover; border-radius: 4mm; }
+    header .noimg { width: 30mm; height: 30mm; border-radius: 4mm; background: #0b0c0b; color: #ccff00; display: grid; place-items: center; font: 800 26pt 'Figtree'; }
+    h1 { font-size: 26pt; font-weight: 800; letter-spacing: -.02em; line-height: 1; }
+    .role { font: 500 10.5pt 'JetBrains Mono', monospace; color: var(--accent); margin: 2mm 0 3mm; }
+    .contacts { display: flex; flex-wrap: wrap; gap: 1mm 5mm; font-size: 9pt; color: var(--muted); }
+    .contacts a { color: var(--ink); text-decoration: none; }
+    h2 { font: 700 8.5pt 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: .14em; color: var(--accent); margin: 4.5mm 0 2mm; break-after: avoid; }
+    p { margin-bottom: 2mm; }
+    .job { margin-bottom: 3.5mm; break-inside: avoid; }
+    .job__head { display: flex; justify-content: space-between; gap: 4mm; align-items: baseline; }
+    .job h3 { font-size: 12pt; font-weight: 800; }
+    .job__when { font: 400 8.5pt 'JetBrains Mono', monospace; color: var(--muted); white-space: nowrap; }
+    .job__role { font-weight: 600; color: var(--muted); margin: .5mm 0 1.5mm; }
+    ul { padding-left: 4.5mm; }
+    li { margin-bottom: .7mm; }
+    li b { font-weight: 600; }
+    .chips { display: flex; flex-wrap: wrap; gap: 1.2mm; margin-top: 1.5mm; }
+    .chips span { font: 500 7.8pt 'JetBrains Mono', monospace; background: var(--chip); color: #3d4f00; padding: .6mm 2mm; border-radius: 1.5mm; }
+    .stack { display: grid; grid-template-columns: 32mm 1fr; gap: 1.2mm 4mm; }
+    .stack dt { font-weight: 700; }
+    .stack dd { color: #2d312c; }
+    .numbers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; margin: 3mm 0 0; }
+    .numbers div { border: 1px solid var(--line); border-radius: 2mm; padding: 2.5mm 3mm; }
+    .numbers b { display: block; font-size: 15pt; font-weight: 800; }
+    .numbers span { font-size: 8pt; color: var(--muted); line-height: 1.3; display: block; }
+    a.url { color: var(--accent); text-decoration: none; font-family: 'JetBrains Mono', monospace; font-size: 8.5pt; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="img/photo-cv.jpg" alt="" onerror="this.outerHTML='<div class=noimg>RK</div>'">
+    <div>
+      <h1>Руслан Керимов</h1>
+      <p class="role">Full-stack разработчик · Laravel · Vue</p>
+      <div class="contacts">
+        <span>Екатеринбург · удалённо или гибрид</span>
+        <a href="https://t.me/rkertini">Telegram @rkertini</a>
+        <a href="mailto:ruslan@eloup.gg">ruslan@eloup.gg</a>
+        <a href="mailto:lamalqpost@gmail.com">lamalqpost@gmail.com</a>
+        <a href="https://github.com/Lamakerr">github.com/Lamakerr</a>
+        <a href="https://lamakerr.github.io/">lamakerr.github.io</a>
+      </div>
+    </div>
+  </header>
+
+  <h2>О себе</h2>
+  <p>Делаю продукты целиком: от базы данных, очередей и интеграций до интерфейса, оплаты и выкатки на сервер. Основатель и ведущий разработчик ELOUP.GG — платформы тренировок для игроков CS2 с подпиской, ИИ-разбором матчей и функциями реального времени. Открыт к работе в команде и к проектам на заказ.</p>
+  <div class="numbers">
+    <div><b>690</b><span>коммитов в ELOUP.GG, 488 — мои</span></div>
+    <div><b>1 191</b><span>автотест на PHPUnit</span></div>
+    <div><b>92</b><span>страницы на Vue + Inertia SSR</span></div>
+    <div><b>3</b><span>проекта в продакшене</span></div>
+  </div>
+
+  <h2>Проекты</h2>
+  <div class="job">
+    <div class="job__head"><h3>ELOUP.GG</h3><span class="job__when">февраль 2026 — сейчас</span></div>
+    <p class="job__role">Основатель, ведущий разработчик · <a class="url" href="https://eloup.gg">eloup.gg</a></p>
+    <ul>
+      <li><b>ИИ-разбор демок:</b> сервис на Go разбирает запись матча, Laravel считает метрики и через очередь получает разбор от языковой модели; ИИ-ассистент с памятью о прошлых разборах игрока.</li>
+      <li><b>Подписка с автоплатежами</b> через ЮKassa: продление, возвраты, промокоды, сверка платежей с единой точкой записи исхода.</li>
+      <li><b>Тактическая доска в реальном времени</b> на Reverb (WebSocket): presence-каналы, права на редактирование, реплей демки на canvas.</li>
+      <li><b>Контент:</b> раскидки с видео (обработка ffmpeg в очереди), новости и гайды с модерацией, комментарии, профили с опытом и уровнями, карточки матчей через headless Chrome.</li>
+      <li><b>Интеграции:</b> VK ID, Steam, FACEIT API, автопостинг и боты Telegram и VK, управление TeamSpeak-сервером, IndexNow.</li>
+      <li><b>Инфраструктура и качество:</b> ролевая админка с журналом действий и 2FA, 1 191 автотест, CI/CD на GitHub Actions, nginx и supervisor, бэкапы в S3, ежедневная сводка о состоянии системы.</li>
+    </ul>
+    <div class="chips"><span>Laravel 13</span><span>Vue 3</span><span>Inertia SSR</span><span>PostgreSQL</span><span>Redis/Horizon</span><span>Reverb</span><span>Go</span><span>ЮKassa</span><span>LLM</span></div>
+  </div>
+
+  <div class="job">
+    <div class="job__head"><h3>Студия праздников «Атмосфера»</h3><span class="job__when">май 2026 — сейчас</span></div>
+    <p class="job__role">Разработка на заказ · <a class="url" href="https://ekb-atmosfera.ru">ekb-atmosfera.ru</a></p>
+    <ul>
+      <li>Сайт студии декора: лендинг с анимациями, CRM для заявок и админка на Filament, SSR.</li>
+      <li>SEO-переработка: страницы для 9 услуг с текстами, FAQ и микроразметкой, исправленные sitemap, дубли и canonical.</li>
+      <li>Автоматическое пережатие картинок в WebP при загрузке — страница стала в 9 раз легче.</li>
+    </ul>
+    <div class="chips"><span>Laravel</span><span>Filament</span><span>Vue</span><span>SSR</span><span>SEO</span></div>
+  </div>
+
+  <div class="job">
+    <div class="job__head"><h3>Портфолио дизайнера</h3><span class="job__when">октябрь 2026</span></div>
+    <p class="job__role">Личный проект · <a class="url" href="https://lamakerr.github.io/farida-portfolio/">lamakerr.github.io/farida-portfolio</a></p>
+    <ul>
+      <li>Выгрузка работ из Figma через API, 17 кейсов, сайт и PDF-версия из одного источника данных, GitHub Pages.</li>
+    </ul>
+  </div>
+
+  <h2>Стек</h2>
+  <dl class="stack">
+    <dt>Backend</dt><dd>PHP 8.3, Laravel 13, PostgreSQL, Redis, очереди и Horizon, Reverb (WebSocket), Go, PHPUnit</dd>
+    <dt>Frontend</dt><dd>Vue 3, Inertia с SSR, Tailwind 4, Vite, canvas</dd>
+    <dt>Инфраструктура</dt><dd>Ubuntu, nginx, php-fpm, supervisor, systemd, GitHub Actions, S3</dd>
+    <dt>Интеграции</dt><dd>ЮKassa, LLM-модели, Telegram и VK API, VK ID, Steam, FACEIT, Figma API</dd>
+    <dt>SEO и аналитика</dt><dd>SSR, sitemap, canonical, микроразметка, IndexNow, Яндекс.Метрика и Вебмастер</dd>
+  </dl>
+</body>
+</html>
