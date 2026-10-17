@@ -1,3 +1,4 @@
 # исходники фото не публикуем
 img/*.jpg
 !img/og.jpg
+!img/photo-cv.jpg
